@@ -1,0 +1,413 @@
+<nav class="crumb" aria-label="Breadcrumb">
+  <a href="index.html">Home</a>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+  <span>Training</span>
+</nav>
+
+<h1>The training pyramid</h1>
+
+<p class="lede">The gym version of the same problem. People debate splits and rest timers while
+training twice a month with sets they could have doubled. Fix the base first.</p>
+
+<div class="answer">
+  <span class="answer__k">Short answer</span>
+  <p>Train 2 to 4 times a week for years, take your sets to within 1 to 3 reps of failure, and beat
+  your logbook over time. Those three carry about 75% of the result.</p>
+  <p>Then run 10 to 20 hard sets per muscle per week, hit each muscle twice, and keep the same
+  handful of exercises long enough to progress them. Rest periods, tempo and advanced techniques
+  come last and are worth a few percent.</p>
+</div>
+
+<figure class="pyrfig">
+  <svg viewBox="0 0 440 210" role="img" aria-label="Pyramid showing consistency, effort and progression at the base worth about 75 percent, volume, frequency and exercise selection in the middle worth 15 to 20 percent, and rest periods, tempo and periodisation at the top worth 1 to 5 percent.">
+    <polygon points="220,8 262,66 178,66" fill="#D92D20"/>
+    <polygon points="174,74 266,74 296,132 144,132" fill="#D98014"/>
+    <polygon points="140,140 300,140 330,198 110,198" fill="#0F8A54"/>
+    <text x="220" y="56" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="IBM Plex Mono, monospace">1-5%</text>
+    <text x="220" y="110" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" font-family="IBM Plex Mono, monospace">15-20%</text>
+    <text x="220" y="176" text-anchor="middle" fill="#fff" font-size="16" font-weight="600" font-family="IBM Plex Mono, monospace">~75%</text>
+  </svg>
+  <figcaption>Share of your result, by tier. Read from the bottom up.</figcaption>
+</figure>
+
+<div class="pyr__legend">
+  <span><i class="dot dot--g"></i> Foundation, do this first</span>
+  <span><i class="dot dot--a"></i> Worth tuning next</span>
+  <span><i class="dot dot--r"></i> Ignore until the rest is automatic</span>
+</div>
+
+<ol class="pyr">
+  <li>
+    <button class="tier tier--1" data-tier aria-expanded="false" aria-controls="t1">
+      <span class="tier__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.2 12 3l9 7.2"/><path d="M5 9.4V20h14V9.4"/></svg></span>
+      <span class="tier__txt">
+        <span class="tier__name">Showing up, effort, progression</span>
+        <span class="tier__sub">Tier 1 of 3 &middot; the foundation</span>
+      </span>
+      <span class="tier__pct">~75%</span>
+      <svg class="tier__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tierpanel" id="t1" hidden>
+      <p><strong>Two to four sessions a week, for years.</strong> Three is the sweet spot alongside
+      a full-time job. The programme you keep beats the programme you admire.</p>
+      <p><strong>Take sets to within 1 to 3 reps of failure.</strong> The most common reason people
+      train for a year and look identical is that no set was ever hard.<a class="ref" href="sources.html#r14">14</a></p>
+      <p><strong>Beat last week's logbook.</strong> One more rep, 2.5 kg more, cleaner form. Write
+      it down or it did not happen.</p>
+      <p style="margin-bottom:0"><a href="#progression">Full detail below</a></p>
+    </div>
+  </li>
+
+  <li>
+    <button class="tier tier--2" data-tier aria-expanded="false" aria-controls="t2">
+      <span class="tier__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></svg></span>
+      <span class="tier__txt">
+        <span class="tier__name">Volume, frequency, exercise selection</span>
+        <span class="tier__sub">Tier 2 of 3 &middot; worth tuning</span>
+      </span>
+      <span class="tier__pct">15-20%</span>
+      <svg class="tier__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tierpanel" id="t2" hidden>
+      <p><strong>Ten to twenty hard sets per muscle per week.</strong> Start at the bottom of that
+      range. More is not better once recovery breaks.<a class="ref" href="sources.html#r11">11</a></p>
+      <p><strong>Hit each muscle twice a week.</strong> Slightly better than once at matched weekly
+      volume, and it spreads the fatigue.<a class="ref" href="sources.html#r12">12</a></p>
+      <p><strong>Pick one or two exercises per muscle and keep them.</strong> You cannot progress a
+      lift you rotate out every week.</p>
+      <p style="margin-bottom:0"><a href="#volume">Full detail below</a></p>
+    </div>
+  </li>
+
+  <li>
+    <button class="tier tier--3" data-tier aria-expanded="false" aria-controls="t3">
+      <span class="tier__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9.5V13l2.2 2.2"/><path d="M9 2h6"/></svg></span>
+      <span class="tier__txt">
+        <span class="tier__name">Rest periods, tempo, periodisation</span>
+        <span class="tier__sub">Tier 3 of 3 &middot; ignore for now</span>
+      </span>
+      <span class="tier__pct">1-5%</span>
+      <svg class="tier__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tierpanel" id="t3" hidden>
+      <p><strong>Rest 2 to 3 minutes on compounds, 1 to 2 on isolations.</strong> Rushing sets costs
+      you reps, which costs you volume. That is the whole mechanism.<a class="ref" href="sources.html#r15">15</a></p>
+      <p><strong>Control the lowering phase, roughly two seconds.</strong> No counting needed.</p>
+      <p><strong>Drop sets, supersets and myo-reps save time.</strong> They do not beat straight
+      sets for growth.</p>
+      <p style="margin-bottom:0"><a href="#details">Full detail below</a></p>
+    </div>
+  </li>
+</ol>
+
+<div class="toc">
+  <span class="toc__k">On this page</span>
+  <ol>
+    <li><a href="#progression">Effort and progression</a></li>
+    <li><a href="#volume">Volume, frequency and exercise selection</a></li>
+    <li><a href="#details">Rest, tempo and periodisation</a></li>
+    <li><a href="#cardio">Cardio and steps</a></li>
+    <li><a href="#faq">Common questions</a></li>
+  </ol>
+</div>
+
+<!-- ================================================= PROGRESSION -->
+<section class="sec">
+  <span class="tag tag--g">Tier 1</span>
+  <h2 id="progression">Effort and progression</h2>
+
+  <div class="answer">
+    <span class="answer__k">Short answer</span>
+    <p>Train 2 to 4 days a week. Take working sets to 1 to 3 reps in reserve. Use double
+    progression: pick a rep range, add weight only once you hit the top of the range on every set.
+    Log every set so you know what to beat.</p>
+  </div>
+
+  <div class="prose">
+    <h3>Show up, for years</h3>
+    <p>Three sessions a week is the honest sweet spot for someone with a full-time job. Two well-run
+    full-body sessions still work. Six days is not a moral achievement. It is a schedule that breaks
+    the first time you travel.</p>
+    <p>Attach training to something fixed. Same days, same time, bag packed the night before, gym on
+    the commute rather than across town. You are removing friction, not summoning motivation.</p>
+
+    <div class="note note--g">
+      <div class="note__t">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+        The 45 minute rule
+      </div>
+      <p>A session you can finish in 45 minutes is one you will do on a bad day. Two hard compounds
+      plus two or three accessories fits comfortably. Long sessions are mostly rest, phone, and
+      exercises added out of anxiety.</p>
+    </div>
+
+    <h3>Train close to failure</h3>
+    <p>Take working sets to within 1 to 3 reps of failure. If you could have done five more, that
+    set did very little. Meta-analysis suggests hypertrophy improves as sets get closer to failure,
+    with the effect flattening in the last couple of reps.<a class="ref" href="sources.html#r14">14</a></p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th scope="col">Reps in reserve</th><th scope="col">How it feels</th><th scope="col">Use it for</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">0, failure</td><td>The next rep will not move</td><td>Occasionally, on machines and isolations. Not on heavy barbell lifts.</td></tr>
+          <tr><td class="mono">1 to 2</td><td>Reps have slowed noticeably, form still solid</td><td>Most of your working sets</td></tr>
+          <tr><td class="mono">3</td><td>Hard, still controlled</td><td>Heavy compounds, and the start of a training block</td></tr>
+          <tr><td class="mono">4 or more</td><td>Comfortable</td><td>Warm-ups and technique practice only</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><small>Reps in reserve is a practical way to rate effort without testing your max every
+    session.<a class="ref" href="sources.html#r16">16</a></small></p>
+
+    <p><strong>Rep range matters less than you think.</strong> Anywhere from 5 to 30 reps builds
+    similar muscle provided the set is taken close to failure.<a class="ref" href="sources.html#r13">13</a>
+    Six to twelve is simply the most practical window: heavy enough to build strength, light enough
+    that form holds and your joints stay comfortable.</p>
+
+    <h3>Progressive overload</h3>
+    <p>Muscle adapts to a demand that keeps rising. If the demand is flat for six months, so are
+    you. Overload means any of:</p>
+    <ul class="do">
+      <li>More weight at the same reps</li>
+      <li>More reps at the same weight</li>
+      <li>An extra set</li>
+      <li>Better range of motion or control at the same numbers</li>
+    </ul>
+    <p><strong>Write it down.</strong> Notes app, paper, any free app. You cannot beat last week if
+    you cannot remember last week, and you will not remember last week. This is the cheapest, highest
+    return habit on the entire site. There is a <a href="downloads.html">free printable log</a> if
+    you prefer paper.</p>
+
+    <h4>Double progression, the rule to use</h4>
+    <p>Pick a range, say 8 to 12. Add weight only when you hit the top of the range on every set.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th scope="col">Week</th><th scope="col">Set 1</th><th scope="col">Set 2</th><th scope="col">Set 3</th><th scope="col">Next step</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="mono">40 kg x 9</td><td class="mono">40 x 8</td><td class="mono">40 x 8</td><td>Stay at 40, chase reps</td></tr>
+          <tr><td>2</td><td class="mono">40 x 11</td><td class="mono">40 x 10</td><td class="mono">40 x 9</td><td>Stay, nearly there</td></tr>
+          <tr><td>3</td><td class="mono">40 x 12</td><td class="mono">40 x 12</td><td class="mono">40 x 12</td><td>Add 2.5 kg next session</td></tr>
+          <tr><td>4</td><td class="mono">42.5 x 9</td><td class="mono">42.5 x 8</td><td class="mono">42.5 x 8</td><td>Repeat the cycle</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Progress slows as you get more trained. That is normal rather than failure. A beginner adds
+    weight weekly. After two years it might be monthly on a given lift. Both are working.</p>
+  </div>
+</section>
+
+<!-- ====================================================== VOLUME -->
+<section class="sec">
+  <span class="tag tag--a">Tier 2</span>
+  <h2 id="volume">Volume, frequency and exercise selection</h2>
+
+  <div class="answer">
+    <span class="answer__k">Short answer</span>
+    <p>Run 10 to 20 hard sets per muscle per week, starting at the low end. Split them across two
+    sessions per muscle. Choose one or two exercises per muscle group and keep them for months so
+    you can actually progress them.</p>
+  </div>
+
+  <div class="prose">
+    <h3>Volume</h3>
+    <p>A hard set means a working set taken within a few reps of failure. Warm-ups do not count.
+    Ten sets a week grows muscle in most people, and more sets tend to produce more growth up to a
+    point.<a class="ref" href="sources.html#r11">11</a> Twenty is near the top of what is usually
+    useful. <strong>Start at the bottom and add only when progress stalls.</strong> You cannot add
+    volume forever, so do not spend the budget in month one.</p>
+    <p>Compounds pay into several muscles at once. Three sets of rows credit your back and, partly,
+    your biceps, so you do not need six extra curl sets to cover arms.</p>
+    <p><a href="calculators.html#volume">Work out your own weekly set target.</a></p>
+
+    <h3>Frequency</h3>
+    <p>At matched weekly volume, twice a week beats once by a small margin, and it makes sessions
+    more manageable.<a class="ref" href="sources.html#r12">12</a> Ten sets of back in one go is a
+    slog where two lots of five is not. Three times a week is fine too, and the returns flatten out.
+    This is the main reason upper/lower splits work so well across four days.</p>
+
+    <h3>Exercise selection</h3>
+    <p><strong>One or two exercises per muscle group, held for months.</strong> You cannot apply
+    progressive overload to a lift you swap out every session, and muscle confusion is a marketing
+    phrase rather than a mechanism. Rotate exercises every few months if a lift stops feeling
+    productive or a joint complains, not because you got bored in week two.</p>
+
+    <h4>Choose by these four criteria</h4>
+    <ol class="steps" style="margin-top:18px">
+      <li><h4>Trains the muscle through a long range under load</h4><p>Full range beats a short heavy partial.</p></li>
+      <li><h4>Loadable and progressable</h4><p>You must be able to add weight in small increments. This is why machines and dumbbells eventually beat most bodyweight work.</p></li>
+      <li><h4>Comfortable and repeatable for you</h4><p>The best exercise that hurts your shoulder is not the best exercise. Anatomy varies, so substitute freely.</p></li>
+      <li><h4>Fails safely</h4><p>Missing a rep should be a non-event. Machines, dumbbells and cables qualify. Loaded barbells across your back need safeties or a spotter.</p></li>
+    </ol>
+
+    <h4>The movement pattern checklist</h4>
+    <p>A complete week covers these six, whatever the split is called.</p>
+    <div class="tw">
+      <table>
+        <thead><tr><th scope="col">Pattern</th><th scope="col">Examples</th><th scope="col">Trains</th></tr></thead>
+        <tbody>
+          <tr><td>Squat or knee bend</td><td>Squat, leg press, hack squat, split squat</td><td>Quads, glutes</td></tr>
+          <tr><td>Hinge</td><td>Romanian deadlift, deadlift, hip thrust, back extension</td><td>Hamstrings, glutes, spinal erectors</td></tr>
+          <tr><td>Horizontal push</td><td>Bench press, dumbbell press, push-up, chest press</td><td>Chest, front delts, triceps</td></tr>
+          <tr><td>Horizontal pull</td><td>Any row, chest-supported row, cable row</td><td>Mid-back, lats, biceps, rear delts</td></tr>
+          <tr><td>Vertical push</td><td>Overhead press, dumbbell shoulder press</td><td>Shoulders, triceps</td></tr>
+          <tr><td>Vertical pull</td><td>Pull-up, chin-up, lat pulldown</td><td>Lats, biceps</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Then add direct work for whatever the compounds under-serve and you care about: side delts,
+    biceps, triceps, calves, abs. <a href="exercises.html">Cues for each movement.</a></p>
+  </div>
+</section>
+
+<!-- ===================================================== DETAILS -->
+<section class="sec">
+  <span class="tag tag--r">Tier 3</span>
+  <h2 id="details">Rest, tempo and periodisation</h2>
+
+  <div class="answer">
+    <span class="answer__k">Short answer</span>
+    <p>Rest 2 to 3 minutes on compounds and 1 to 2 on isolations. Control the lowering phase for
+    about two seconds. Put the hardest lift first. When progress stalls for two or three weeks, take
+    an easy week at half the sets. That covers almost everything in this tier.</p>
+  </div>
+
+  <div class="prose">
+    <h3>Rest periods</h3>
+    <p>Longer rest means more reps at a given weight, which means more volume. That is the entire
+    mechanism, and it is why the old 60 second advice was
+    counterproductive.<a class="ref" href="sources.html#r15">15</a> If you are short on time,
+    superset unrelated muscles such as calves with chest rather than cutting rest on your main lifts.</p>
+
+    <h3>Tempo</h3>
+    <p>Control the lowering phase, roughly two seconds, without counting. Do not bounce out of the
+    bottom. Lift the weight with intent. Elaborate tempo prescriptions mainly reduce the load you
+    can handle, and the returns do not justify the bookkeeping.</p>
+
+    <h3>Exercise order</h3>
+    <p>Hardest, most technical, most important lift first while you are fresh. That is usually a
+    heavy compound. Isolations and machines at the end where fatigue costs you least.</p>
+
+    <h3>Periodisation and deloads</h3>
+    <p>For a recreational lifter, periodisation mostly means this: <strong>when progress stalls for
+    two or three weeks across several lifts, take an easy week.</strong> Half the sets, or the same
+    sets at around 60% of the weight. You usually come back stronger. That captures most of the
+    benefit of any formal model without the spreadsheet.</p>
+
+    <h3>Advanced techniques</h3>
+    <p>Drop sets, rest-pause, myo-reps, partials and cluster sets are genuinely useful for one thing:
+    getting an equivalent stimulus in less time. They do not out-grow straight sets taken near
+    failure, and they generate more fatigue per unit of work. Use them when the clock is the
+    constraint rather than as an upgrade.</p>
+
+    <h3>Everything else people worry about</h3>
+    <ul class="do">
+      <li><strong>Free weights and machines both build muscle.</strong> Machines are safer to push hard, barbells load heavier. Use both.</li>
+      <li><strong>Mind-muscle connection</strong> is mildly helpful on isolations and irrelevant on heavy compounds.</li>
+      <li><strong>Training to failure on every set</strong> adds fatigue without adding growth. Save it for the last set of an isolation.</li>
+      <li><strong>Long static stretching before lifting</strong> slightly reduces strength. Warm up with movement and lighter sets of the lift instead.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ====================================================== CARDIO -->
+<section class="sec">
+  <span class="tag tag--g">Foundation</span>
+  <h2 id="cardio">Cardio and steps</h2>
+
+  <div class="answer">
+    <span class="answer__k">Short answer</span>
+    <p>Walk 7,000 to 10,000 steps a day and do 150 minutes a week of moderate activity, which is the
+    public health floor.<a class="ref" href="sources.html#r17">17</a> Cardio does not kill your
+    gains. Excessive cardio combined with insufficient food does.</p>
+  </div>
+
+  <div class="prose">
+    <p>Lifting shapes your body. Cardio keeps you alive longer. Cardiorespiratory fitness is one of
+    the strongest predictors of all-cause mortality there is, so it is not optional just because you
+    train for looks.<a class="ref" href="sources.html#r19">19</a></p>
+
+    <div class="tw">
+      <table>
+        <thead><tr><th scope="col">Do this</th><th scope="col">How much</th><th scope="col">Why</th></tr></thead>
+        <tbody>
+          <tr><td>Walking</td><td class="mono">7,000 to 10,000 steps daily</td><td>Biggest lever on daily energy expenditure, near-zero recovery cost, fits a desk job. Mortality benefits rise up to roughly 8,000 to 10,000 steps.<a class="ref" href="sources.html#r18">18</a></td></tr>
+          <tr><td>Easy cardio</td><td class="mono">2 to 3 x 30 to 45 min</td><td>Builds the aerobic base at a conversational pace. Cycle, incline walk, row or swim.</td></tr>
+          <tr><td>Hard intervals</td><td class="mono">1 x 10 to 20 min, optional</td><td>Efficient way to raise VO2max. Keep it away from leg day.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Keep hard running away from leg sessions and you will never notice a conflict between the two.</p>
+  </div>
+</section>
+
+<!-- ========================================================= FAQ -->
+<section class="sec">
+  <h2 id="faq">Common questions</h2>
+
+  <details class="acc" data-faq>
+    <summary>Do I need to lift heavy to build muscle?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>No. Loads from roughly 30% to 80% of your one rep max build similar muscle when sets are taken close to failure. Heavy loads matter specifically for building maximal strength. Six to twelve reps is the practical default because it balances both.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>Is soreness a sign of a good workout?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>No. Soreness mostly tracks novelty, such as a new exercise, a long layoff, or lots of work in stretched positions. Experienced lifters grow while rarely getting sore. Judge progress by the logbook rather than the ache.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>Which training split is best?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>The one matching your available days that hits each muscle about twice a week. Full body for 2 to 3 days, upper/lower for 4, push/pull/legs for 5 to 6. The split is a scheduling tool rather than a training method.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>Can I build muscle at home with bodyweight only?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>Early on, yes. Push-ups, chin-ups, split squats and hinges taken near failure work well. The limitation is progression, since you eventually run out of ways to make a push-up harder. Bands, a pull-up bar and a pair of adjustable dumbbells solve most of it.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>How long before I see results?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>Strength improves within two to four weeks, largely through better technique and neural adaptation. Visible muscle change usually takes eight to twelve weeks. Fat loss shows on the scale within two weeks and in the mirror around six to eight. A realistic first year for a male beginner is 8 to 10 kg of muscle at best, and roughly half that for a female beginner, with both figures falling sharply in later years.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>Do I need a belt, straps or a spotter?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>Straps are genuinely useful, because they stop your grip capping your back training. A belt helps on heavy squats and deadlifts above roughly 80% of your max. Sleeves are comfort. None of it is required to start. If you bench alone, use a rack with safety pins rather than relying on a spotter who is not there.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>What if I miss a week?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>Nothing meaningful happens. You hold muscle for weeks without training, and strength returns within a session or two. Come back at about 90% of your previous weights for one week, then carry on. A missed week is a rounding error. Quitting because of a missed week is not.</p></div>
+  </details>
+
+  <details class="acc" data-faq>
+    <summary>Should I train through pain?
+      <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </summary>
+    <div class="acc__in"><p>Muscular burn and general fatigue are fine. Sharp pain, joint-located pain, one-sided pain, or anything that lingers the next day means stop that exercise and substitute a pain-free alternative. Persistent pain is a physiotherapist's job rather than a website's.</p></div>
+  </details>
+</section>
+
+<nav class="pagenav" aria-label="Page navigation">
+  <a href="nutrition.html"><span>Previous</span><strong>The nutrition pyramid</strong></a>
+  <a href="exercises.html"><span>Next</span><strong>Exercise library</strong></a>
+</nav>
+
+<p class="disclaimer"><strong>Not medical advice.</strong> General educational information for
+healthy adults. Get cleared by a doctor before starting a new training programme if you have a
+heart condition or high blood pressure, are pregnant, or have been inactive for a long stretch.
+<a href="sources.html">See the evidence behind every number on this page.</a></p>

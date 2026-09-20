@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calorie, Macro, Volume and One Rep Max Calculators</title>
+<meta name="description" content="Work out your maintenance calories and macro targets, how many weekly sets to run, and your estimated one rep max. Everything runs in your browser.">
+<meta name="keywords" content="calorie calculator, macro calculator, TDEE calculator, one rep max calculator, training volume calculator">
+<meta name="author" content="Groundwork">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://USERNAME.github.io/groundwork/calculators.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Groundwork">
+<meta property="og:title" content="Calorie, Macro, Volume and One Rep Max Calculators">
+<meta property="og:description" content="Work out your maintenance calories and macro targets, how many weekly sets to run, and your estimated one rep max. Everything runs in your browser.">
+<meta property="og:url" content="https://USERNAME.github.io/groundwork/calculators.html">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calorie, Macro, Volume and One Rep Max Calculators">
+<meta name="twitter:description" content="Work out your maintenance calories and macro targets, how many weekly sets to run, and your estimated one rep max. Everything runs in your browser.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3 22 20.5H2Z' fill='%230F8A54'/%3E%3Cpath d='M12 3 17 11.7H7Z' fill='%23D98014'/%3E%3Cpath d='M12 3 14.2 6.9H9.8Z' fill='%23D92D20'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Calorie, Macro, Volume and One Rep Max Calculators","headline":"Calorie, Macro, Volume and One Rep Max Calculators","description":"Work out your maintenance calories and macro targets, how many weekly sets to run, and your estimated one rep max. Everything runs in your browser.","url":"https://USERNAME.github.io/groundwork/calculators.html","inLanguage":"en","dateModified":"2026-09-20","isPartOf":{"@type":"WebSite","name":"Groundwork","url":"https://USERNAME.github.io/groundwork/"},"publisher":{"@type":"Organization","name":"Groundwork","url":"https://USERNAME.github.io/groundwork/"},"applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://USERNAME.github.io/groundwork/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://USERNAME.github.io/groundwork/calculators.html"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">
+  <button class="burger" data-burger aria-expanded="false" aria-label="Open navigation" aria-controls="sidebar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+  <a class="topbar__brand" href="index.html"><svg class="side__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 22 20.5H2Z" fill="#0F8A54"/><path d="M12 3 17 11.7H7Z" fill="#D98014"/><path d="M12 3 14.2 6.9H9.8Z" fill="#D92D20"/></svg> Groundwork</a>
+</div>
+<div class="scrim" data-scrim></div>
+
+<div class="app">
+  <aside class="side" id="sidebar" data-side>
+    <a class="side__brand" href="index.html"><svg class="side__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 22 20.5H2Z" fill="#0F8A54"/><path d="M12 3 17 11.7H7Z" fill="#D98014"/><path d="M12 3 14.2 6.9H9.8Z" fill="#D92D20"/></svg> Groundwork <span class="side__tag">Free</span></a>
+    <nav class="side__nav" aria-label="Main">
+<a class="side__solo" href="index.html"><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.2 12 3l9 7.2"/><path d="M5 9.4V20h14V9.4"/><path d="M9.5 20v-6h5v6"/></svg>Start here</a>
+<details class="navgroup">
+<summary><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 8.2c-1.4-1.3-4-1.6-5.6.2-1.9 2.1-1.3 5.9.4 8.4 1 1.5 2.3 2.6 3.4 2.6.9 0 1.3-.4 1.8-.4s.9.4 1.8.4c1.1 0 2.4-1.1 3.4-2.6 1.7-2.5 2.3-6.3.4-8.4-1.6-1.8-4.2-1.5-5.6-.2Z"/><path d="M12 8.2V5.6A2.6 2.6 0 0 1 14.6 3"/></svg>Nutrition<svg class="navgroup__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></summary>
+<ul class="navgroup__list">
+<li><a href="nutrition.html">The nutrition pyramid</a></li>
+<li><a href="nutrition.html#calories">Calories and the deficit</a></li>
+<li><a href="nutrition.html#protein">Protein</a></li>
+<li><a href="nutrition.html#quality">Food quality and fibre</a></li>
+<li><a href="nutrition.html#supplements">Supplements</a></li>
+<li><a href="nutrition.html#faq">Common questions</a></li>
+</ul></details>
+<details class="navgroup">
+<summary><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5v11"/><path d="M17.5 6.5v11"/><path d="M3.5 9.5v5"/><path d="M20.5 9.5v5"/><path d="M6.5 12h11"/></svg>Training<svg class="navgroup__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></summary>
+<ul class="navgroup__list">
+<li><a href="training.html">The training pyramid</a></li>
+<li><a href="training.html#progression">Effort and progression</a></li>
+<li><a href="training.html#volume">Volume and frequency</a></li>
+<li><a href="training.html#cardio">Cardio and steps</a></li>
+<li><a href="training.html#faq">Common questions</a></li>
+</ul></details>
+<details class="navgroup">
+<summary><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11"/><path d="M9 12h11"/><path d="M9 18h11"/><path d="M4.2 6h.01"/><path d="M4.2 12h.01"/><path d="M4.2 18h.01"/></svg>Exercises<svg class="navgroup__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></summary>
+<ul class="navgroup__list">
+<li><a href="exercises.html">Full library</a></li>
+<li><a href="exercises.html#squat">Squat</a></li>
+<li><a href="exercises.html#hinge">Hinge</a></li>
+<li><a href="exercises.html#push">Push</a></li>
+<li><a href="exercises.html#pull">Pull</a></li>
+<li><a href="exercises.html#arms">Arms and shoulders</a></li>
+<li><a href="exercises.html#core">Core and calves</a></li>
+</ul></details>
+<details class="navgroup">
+<summary><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8"/><path d="M8.5 12h.01"/><path d="M12 12h.01"/><path d="M15.5 12h.01"/><path d="M8.5 16h.01"/><path d="M12 16h.01"/><path d="M15.5 16h.01"/></svg>Calculators<svg class="navgroup__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></summary>
+<ul class="navgroup__list">
+<li><a href="calculators.html">Calories and macros</a></li>
+<li><a href="calculators.html#volume">Training volume</a></li>
+<li><a href="calculators.html#onerm">One rep max</a></li>
+</ul></details>
+<details class="navgroup">
+<summary><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17"/><path d="M8 3.5v3"/><path d="M16 3.5v3"/></svg>Planner<svg class="navgroup__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></summary>
+<ul class="navgroup__list">
+<li><a href="planner.html">Pick your split</a></li>
+<li><a href="planner.html#d2">2 days a week</a></li>
+<li><a href="planner.html#d3">3 days a week</a></li>
+<li><a href="planner.html#d4">4 days a week</a></li>
+<li><a href="planner.html#d5">5 days a week</a></li>
+</ul></details>
+<a class="side__solo" href="downloads.html"><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5v11"/><path d="m8 10.5 4 4 4-4"/><path d="M4.5 16.5v2a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-2"/></svg>Free templates</a>
+<a class="side__solo" href="sources.html"><svg class="navgroup__ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2 2 0 0 1 6 3.5h6v17H6a2 2 0 0 1-2-2Z"/><path d="M20 5.5a2 2 0 0 0-2-2h-6v17h6a2 2 0 0 0 2-2Z"/></svg>Sources</a>
+</nav>
+    <div class="side__foot">
+      Educational content for healthy adults. Not medical advice.<br>
+      Last reviewed 2026-09-20.
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="page">
+<nav class="crumb" aria-label="Breadcrumb">
+  <a href="index.html">Home</a>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+  <span>Calculators</span>
+</nav>
+
+<h1>Calculators</h1>
+
+<p class="lede">Three tools. Everything runs in your browser, nothing is sent anywhere, and there is
+no sign-up. Results update as you type.</p>
+
+<div class="toc" style="margin-top:26px">
+  <span class="toc__k">On this page</span>
+  <ol>
+    <li><a href="#energy">Calories and macros</a></li>
+    <li><a href="#volume">Training volume</a></li>
+    <li><a href="#onerm">One rep max</a></li>
+    <li><a href="#maths">How the maths works</a></li>
+  </ol>
+</div>
+
+<!-- ====================================================== ENERGY -->
+<section class="sec">
+  <span class="tag tag--g">Tier 1 tool</span>
+  <h2 id="energy">Calories and macros</h2>
+
+  <div class="answer">
+    <span class="answer__k">How to use this</span>
+    <p>Enter your details, pick a goal, then eat that number for two weeks. Weigh yourself every
+    morning and compare weekly averages. Adjust by 150 to 200 kcal based on what actually happened,
+    because the formula is a starting guess rather than a measurement.</p>
+  </div>
+
+  <form class="card" data-calc autocomplete="off">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:18px">
+      <h3 style="margin:0">About you</h3>
+      <div class="seg" role="group" aria-label="Units">
+        <button type="button" data-unit="metric" aria-pressed="true">kg / cm</button>
+        <button type="button" data-unit="imperial" aria-pressed="false">lb / in</button>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="field">
+        <label for="sex">Sex <span class="hint">affects the formula only</span></label>
+        <select id="sex">
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="age">Age</label>
+        <input type="number" id="age" value="32" min="14" max="99" step="1" inputmode="numeric">
+      </div>
+      <div class="field">
+        <label for="weight">Weight <span class="hint">in <span data-w-label>kg</span></span></label>
+        <input type="number" id="weight" value="78" min="30" max="400" step="0.5" inputmode="decimal">
+      </div>
+      <div class="field">
+        <label for="height">Height <span class="hint">in <span data-h-label>cm</span></span></label>
+        <input type="number" id="height" value="175" min="100" max="250" step="1" inputmode="numeric">
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="activity">Activity level <span class="hint">be honest, most people overestimate</span></label>
+      <select id="activity">
+        <option value="1.2">Desk job, little movement, under 5,000 steps</option>
+        <option value="1.375" selected>Desk job plus 3 to 4 gym sessions, 6,000 to 8,000 steps</option>
+        <option value="1.55">Active job or 5 to 6 sessions, 10,000 steps or more</option>
+        <option value="1.725">Physically demanding job plus hard training</option>
+        <option value="1.9">Manual labour, or two sessions a day</option>
+      </select>
+    </div>
+
+    <div class="field" style="margin-bottom:0">
+      <label for="goal">Goal</label>
+      <select id="goal">
+        <option value="cut">Lose fat, faster (20% deficit)</option>
+        <option value="lean" selected>Lose fat, sustainable (10% deficit)</option>
+        <option value="maintain">Maintain or recomp</option>
+        <option value="gain">Build muscle (10% surplus)</option>
+      </select>
+    </div>
+  </form>
+
+  <h3 style="margin:32px 0 14px">Daily targets</h3>
+  <div class="stats">
+    <div class="stat stat--hero">
+      <div class="stat__k">Eat this</div>
+      <div class="stat__v" data-out="target">0</div>
+      <div class="stat__u">kcal per day</div>
+    </div>
+    <div class="stat">
+      <div class="stat__k">Maintenance</div>
+      <div class="stat__v" data-out="tdee">0</div>
+      <div class="stat__u">kcal per day (TDEE)</div>
+    </div>
+    <div class="stat">
+      <div class="stat__k">At rest</div>
+      <div class="stat__v" data-out="bmr">0</div>
+      <div class="stat__u">kcal per day (BMR)</div>
+    </div>
+  </div>
+
+  <div class="stats" style="margin-top:10px">
+    <div class="stat">
+      <div class="stat__k">Protein</div>
+      <div class="stat__v" data-out="protein">0</div>
+      <div class="stat__u">hit this daily</div>
+    </div>
+    <div class="stat">
+      <div class="stat__k">Fat</div>
+      <div class="stat__v" data-out="fat">0</div>
+      <div class="stat__u">minimum, flexible above</div>
+    </div>
+    <div class="stat">
+      <div class="stat__k">Carbs</div>
+      <div class="stat__v" data-out="carb">0</div>
+      <div class="stat__u">fills the remainder</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:18px">
+    <h3 style="margin-bottom:4px">Expected rate of change</h3>
+    <p class="mono" style="color:var(--green-ink);font-weight:600;margin-bottom:8px" data-out="rate">0</p>
+    <p style="margin:0;font-size:.92rem;color:var(--tx-2)" data-out="note">&nbsp;</p>
+  </div>
+
+  <div class="note note--a" style="margin-top:18px">
+    <div class="note__t">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9v4.5"/><path d="M12 17.5h.01"/></svg>
+      Read this before you trust the number
+    </div>
+    <p>This is an estimate from a population formula and it can be off by 15% for you
+    personally.<a class="ref" href="sources.html#r1">1</a> Treat it as week one's experiment. After
+    one four week cycle of eating the number and tracking the scale, you will know your real
+    maintenance, which is worth more than any calculator.</p>
+    <p>Targets below roughly 1,500 kcal for men or 1,200 for women are hard to hit while getting
+    adequate protein and micronutrients. If the calculator lands you there, prefer a smaller deficit
+    over a longer period, add walking to widen the gap rather than cutting food further, and consider
+    speaking to a dietitian.</p>
+  </div>
+</section>
+
+<!-- ====================================================== VOLUME -->
+<section class="sec">
+  <span class="tag tag--a">Tier 2 tool</span>
+  <h2 id="volume">Training volume</h2>
+
+  <div class="answer">
+    <span class="answer__k">How to use this</span>
+    <p>Start at the low end of the range it gives you and stay there until progress stalls. Volume
+    is a budget you spend over months, so do not spend it all in week one.<a class="ref" href="sources.html#r11">11</a></p>
+  </div>
+
+  <div class="card" data-volume>
+    <div class="grid2">
+      <div class="field">
+        <label for="days">Days you can train each week</label>
+        <select id="days">
+          <option value="2">2 days</option>
+          <option value="3" selected>3 days</option>
+          <option value="4">4 days</option>
+          <option value="5">5 days</option>
+          <option value="6">6 days</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="level">Training experience</label>
+        <select id="level">
+          <option value="new" selected>New, under 6 months</option>
+          <option value="some">Some, 6 months to 2 years</option>
+          <option value="years">Experienced, 2 years or more</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="stats" style="margin-top:8px">
+      <div class="stat stat--hero">
+        <div class="stat__k">Weekly sets per muscle</div>
+        <div class="stat__v" data-out="sets">10 to 12</div>
+        <div class="stat__u">hard sets, warm-ups excluded</div>
+      </div>
+      <div class="stat">
+        <div class="stat__k">Per session</div>
+        <div class="stat__v" data-out="per-session">3 to 4</div>
+        <div class="stat__u" data-out="per-session-note">sets per session</div>
+      </div>
+    </div>
+
+    <p style="margin:18px 0 0"><strong>Suggested structure:</strong>
+      <span data-out="split">Full body three times.</span>
+      <a href="planner.html">See it written out</a>.</p>
+  </div>
+</section>
+
+<!-- ======================================================= ONERM -->
+<section class="sec">
+  <span class="tag">Reference tool</span>
+  <h2 id="onerm">One rep max</h2>
+
+  <div class="answer">
+    <span class="answer__k">How to use this</span>
+    <p>Enter a set you have actually done at 3 to 8 reps near failure. The estimate gets less
+    accurate above about 10 reps. Use it to pick starting weights for a new rep range, not to test
+    your max.</p>
+  </div>
+
+  <div class="card" data-orm>
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px">
+      <h3 style="margin:0">A set you have done</h3>
+      <div class="seg" role="group" aria-label="Units">
+        <button type="button" data-orm-u="kg" aria-pressed="true">kg</button>
+        <button type="button" data-orm-u="lb" aria-pressed="false">lb</button>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="field">
+        <label for="lift-weight">Weight lifted <span class="hint">in <span data-orm-unit>kg</span></span></label>
+        <input type="number" id="lift-weight" value="80" min="1" max="600" step="0.5" inputmode="decimal">
+      </div>
+      <div class="field">
+        <label for="lift-reps">Reps completed <span class="hint">1 to 12</span></label>
+        <input type="number" id="lift-reps" value="5" min="1" max="12" step="1" inputmode="numeric">
+      </div>
+    </div>
+
+    <div class="stats" style="margin-bottom:18px">
+      <div class="stat stat--hero">
+        <div class="stat__k">Estimated one rep max</div>
+        <div class="stat__v" data-out="orm">0</div>
+        <div class="stat__u">average of Epley and Brzycki</div>
+      </div>
+    </div>
+
+    <div class="tw" style="margin-bottom:0">
+      <table>
+        <caption class="sr-only">Estimated working weights by rep count</caption>
+        <thead><tr><th scope="col">Reps</th><th scope="col">Percent of max</th><th scope="col">Weight</th></tr></thead>
+        <tbody data-out="orm-table"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="note note--r" style="margin-top:16px">
+    <div class="note__t">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+      Do not go and test this
+    </div>
+    <p>Attempting a true one rep max carries injury risk and tells you almost nothing useful if your
+    goal is muscle or general fitness. Estimating from a hard set of five is safer and accurate
+    enough for picking weights.</p>
+  </div>
+</section>
+
+<!-- ======================================================= MATHS -->
+<section class="sec">
+  <h2 id="maths">How the maths works</h2>
+  <div class="prose">
+    <h3>Resting energy, Mifflin-St Jeor</h3>
+    <p>The most accurate of the common prediction equations for the general
+    population.<a class="ref" href="sources.html#r1">1</a></p>
+    <p><code>(10 x kg) + (6.25 x cm) - (5 x age) + 5</code> for men<br>
+       <code>(10 x kg) + (6.25 x cm) - (5 x age) - 161</code> for women</p>
+    <p>This is what you would burn lying still all day. Nobody eats at this number.</p>
+
+    <h3>Total daily energy expenditure</h3>
+    <p>Resting energy multiplied by an activity factor between 1.2 and 1.9. This multiplier is the
+    weakest link in the whole calculation, because it bundles your job, your steps, your fidgeting
+    and your training into one guess. <strong>When in doubt, pick the lower option.</strong> Going to
+    the gym four times a week is a 1.375 life rather than a 1.725 life.</p>
+
+    <h3>The target</h3>
+    <p>A percentage of expenditure rather than a flat number, so the deficit scales with your size.
+    A 500 kcal cut is gentle for a 110 kg person and brutal for a 50 kg one.</p>
+
+    <h3>The macros</h3>
+    <dl class="kv">
+      <div><dt>Protein</dt><dd>Set first from bodyweight: 2.2 g/kg cutting, 2.0 losing slowly, 1.8 maintaining or gaining<a class="ref" href="sources.html#r3">3</a></dd></div>
+      <div><dt>Fat</dt><dd>A floor, the greater of 0.7 g/kg or 22% of calories</dd></div>
+      <div><dt>Carbs</dt><dd>Whatever calories are left. This is the flexible one and the fuel for hard training</dd></div>
+    </dl>
+
+    <h3>Rate of change</h3>
+    <p>Using roughly 7,700 kcal per kg of bodyweight. It is a simplification, since early water
+    shifts and later metabolic adaptation both distort it, but it sets a realistic expectation. Any
+    plan promising faster than 1% of bodyweight a week is promising muscle loss.</p>
+
+    <h3>One rep max</h3>
+    <p>The average of two standard formulas, which diverge above roughly 10 reps:</p>
+    <p><code>Epley: weight x (1 + reps / 30)</code><br>
+       <code>Brzycki: weight x 36 / (37 - reps)</code></p>
+    <p>Both are estimates fitted to group averages. Yours can differ by 5% or more in either
+    direction depending on the lift and your rep endurance.</p>
+  </div>
+</section>
+
+<nav class="pagenav" aria-label="Page navigation">
+  <a href="nutrition.html"><span>Background</span><strong>The nutrition pyramid</strong></a>
+  <a href="planner.html"><span>Next</span><strong>Planner</strong></a>
+</nav>
+
+<p class="disclaimer"><strong>Estimates, not medical advice.</strong> For healthy adults. Nothing
+you enter here leaves your browser. Speak to a doctor or registered dietitian before making large
+changes to your intake, particularly if you have a health condition, take medication, or are
+pregnant.</p>
+
+    </div>
+  </main>
+</div>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

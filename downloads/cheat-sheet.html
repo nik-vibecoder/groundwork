@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Groundwork One Page Cheat Sheet</title>
+<meta name="robots" content="noindex">
+<style>
+  @page { size: A4 portrait; margin: 10mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    color: #0B0D0E; margin: 0; padding: 22px; background: #F4F6F8; font-size: 12px; line-height: 1.45;
+  }
+  .sheet { background: #fff; max-width: 210mm; margin: 0 auto; padding: 13mm; box-shadow: 0 2px 18px rgba(0,0,0,.08); }
+  .head { border-bottom: 2px solid #0B0D0E; padding-bottom: 8px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; }
+  h1 { font-size: 20px; margin: 0; letter-spacing: -.03em; }
+  .tag { font-size: 9.5px; letter-spacing: .07em; text-transform: uppercase; color: #6F7780; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+  .box { border: 1px solid #D3D8DE; border-left: 3px solid #0F8A54; border-radius: 5px; padding: 10px 12px; break-inside: avoid; }
+  .box.a { border-left-color: #D98014; }
+  .box.r { border-left-color: #D92D20; }
+  .box h2 { font-size: 12px; margin: 0 0 6px; letter-spacing: -.01em; display: flex; justify-content: space-between; gap: 8px; }
+  .box h2 span { font-size: 9px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #6F7780; }
+  ul { margin: 0; padding-left: 15px; }
+  li { margin-bottom: 3px; }
+  b { font-weight: 650; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  td { padding: 2.5px 0; border-bottom: 1px solid #EDF0F3; }
+  td:last-child { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  .wide { grid-column: 1 / -1; }
+  .foot { margin-top: 12px; padding-top: 9px; border-top: 1px solid #D3D8DE; font-size: 9.5px; color: #6F7780; }
+  .print { text-align: center; margin: 0 auto 18px; max-width: 210mm; }
+  button { font: inherit; font-weight: 600; background: #0B0D0E; color: #fff; border: 0; padding: 9px 20px; border-radius: 6px; cursor: pointer; }
+  @media print { body { background: #fff; padding: 0; } .sheet { box-shadow: none; max-width: none; padding: 0; } .print { display: none; } }
+</style>
+</head>
+<body>
+
+<div class="print"><button onclick="window.print()">Print this page</button></div>
+
+<div class="sheet">
+  <div class="head">
+    <div>
+      <h1>The whole thing on one page</h1>
+      <div class="tag">Groundwork &middot; fitness fundamentals, ranked</div>
+    </div>
+    <div class="tag" style="text-align:right">Green do first<br>Amber next<br>Red later</div>
+  </div>
+
+  <div class="cols">
+
+    <div class="box">
+      <h2>Nutrition foundation <span>~80%</span></h2>
+      <ul>
+        <li><b>Calories</b> decide your weight. Set a deliberate target, not an accidental one.</li>
+        <li><b>Protein</b> 1.6 to 2.2 g per kg bodyweight, every day.</li>
+        <li><b>Consistency</b> 85% adherence for a year beats perfect for three weeks.</li>
+        <li><b>Sleep</b> 7 to 9 hours. <b>Steps</b> 7,000 or more.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Training foundation <span>~75%</span></h2>
+      <ul>
+        <li><b>Show up</b> 2 to 4 times a week, for years.</li>
+        <li><b>Effort</b> 1 to 3 reps left in the tank on working sets.</li>
+        <li><b>Progression</b> beat last week's logbook. Write it down.</li>
+        <li><b>Cover</b> all six movement patterns each week.</li>
+      </ul>
+    </div>
+
+    <div class="box a">
+      <h2>Nutrition, tune next <span>15-20%</span></h2>
+      <ul>
+        <li>Fat floor 0.6 to 1.0 g/kg, carbs fill the rest. Ratio is preference.</li>
+        <li>Fibre 25 to 38 g a day.</li>
+        <li>Roughly 80% whole foods, for satiety and micronutrients.</li>
+        <li>Water to pale yellow urine. Budget alcohol as calories.</li>
+      </ul>
+    </div>
+
+    <div class="box a">
+      <h2>Training, tune next <span>15-20%</span></h2>
+      <ul>
+        <li>10 to 20 hard sets per muscle per week. Start low.</li>
+        <li>Each muscle twice a week.</li>
+        <li>1 to 2 exercises per muscle, kept for months.</li>
+        <li>Full range of motion, control the lowering.</li>
+      </ul>
+    </div>
+
+    <div class="box r">
+      <h2>Nutrition, later <span>1-2%</span></h2>
+      <ul>
+        <li>Creatine monohydrate 3 to 5 g daily. Works.</li>
+        <li>Caffeine 3 to 6 mg/kg pre-training. Works, watch sleep.</li>
+        <li>Meal timing, fasting windows, carb cycling: preference only.</li>
+        <li>Fat burners, BCAAs, detoxes: skip.</li>
+      </ul>
+    </div>
+
+    <div class="box r">
+      <h2>Training, later <span>1-5%</span></h2>
+      <ul>
+        <li>Rest 2 to 3 min compounds, 1 to 2 min isolations.</li>
+        <li>Hardest lift first, isolations last.</li>
+        <li>Easy week when several lifts stall for 2 to 3 weeks.</li>
+        <li>Drop sets and supersets save time, not better for growth.</li>
+      </ul>
+    </div>
+
+    <div class="box wide" style="border-left-color:#0B0D0E">
+      <h2>Numbers to remember</h2>
+      <div class="cols" style="gap:16px">
+        <table>
+          <tr><td>Protein per kg bodyweight</td><td>1.6 - 2.2 g</td></tr>
+          <tr><td>Fat floor per kg</td><td>0.6 - 1.0 g</td></tr>
+          <tr><td>Fibre per day</td><td>25 - 38 g</td></tr>
+          <tr><td>Fat loss rate per week</td><td>0.5 - 1.0%</td></tr>
+          <tr><td>Muscle gain rate per week</td><td>0.25 - 0.5%</td></tr>
+        </table>
+        <table>
+          <tr><td>Hard sets per muscle per week</td><td>10 - 20</td></tr>
+          <tr><td>Reps in reserve on work sets</td><td>1 - 3</td></tr>
+          <tr><td>Useful rep range</td><td>5 - 30</td></tr>
+          <tr><td>Rest, compound lifts</td><td>2 - 3 min</td></tr>
+          <tr><td>Creatine monohydrate daily</td><td>3 - 5 g</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="box wide" style="border-left-color:#0B0D0E">
+      <h2>The six movement patterns</h2>
+      <table>
+        <tr><td>Squat / knee bend</td><td>Squat, leg press, hack squat, split squat</td></tr>
+        <tr><td>Hinge</td><td>Romanian deadlift, deadlift, hip thrust, back extension</td></tr>
+        <tr><td>Horizontal push</td><td>Bench press, dumbbell press, push-up, chest press</td></tr>
+        <tr><td>Horizontal pull</td><td>Chest-supported row, cable row, dumbbell row</td></tr>
+        <tr><td>Vertical push</td><td>Overhead press, dumbbell shoulder press</td></tr>
+        <tr><td>Vertical pull</td><td>Pull-up, chin-up, lat pulldown</td></tr>
+      </table>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    General educational information for healthy adults. Not medical advice. Talk to a doctor before
+    changing how you eat or train, particularly if you have a health condition, take medication, or
+    are pregnant.
+  </div>
+</div>
+
+</body>
+</html>

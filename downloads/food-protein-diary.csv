@@ -1,0 +1,12 @@
+Date,Meal,Food,Portion,Protein (g),Calories,Notes
+2026-01-06,Breakfast,Greek yoghurt 2%,200 g,20,160,
+2026-01-06,Breakfast,Whey scoop,30 g,24,120,
+2026-01-06,Lunch,Chicken breast,150 g cooked,46,250,
+2026-01-06,Dinner,Lentils / dal,1 cup cooked,18,230,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,DAILY TOTAL,,=SUM(E2:E10),=SUM(F2:F10),
+,,TARGET,,,,Fill from the calculator

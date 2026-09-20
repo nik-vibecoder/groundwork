@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printable Workout Log</title>
+<meta name="robots" content="noindex">
+<style>
+  @page { size: A4 portrait; margin: 12mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+    color: #0B0D0E; margin: 0; padding: 22px; background: #F4F6F8;
+    font-size: 13px; line-height: 1.4;
+  }
+  .sheet {
+    background: #fff; max-width: 210mm; margin: 0 auto; padding: 16mm 14mm;
+    box-shadow: 0 2px 18px rgba(0,0,0,.08);
+  }
+  .top { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; border-bottom: 2px solid #0B0D0E; padding-bottom: 9px; margin-bottom: 14px; }
+  h1 { font-size: 19px; margin: 0; letter-spacing: -.02em; }
+  .sub { font-size: 10px; color: #6F7780; letter-spacing: .06em; text-transform: uppercase; }
+  .meta { display: flex; gap: 18px; margin-bottom: 14px; font-size: 12px; }
+  .meta div { flex: 1; }
+  .rule { display: inline-block; border-bottom: 1px solid #9AA1A9; min-width: 70px; height: 15px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 14px; }
+  th {
+    font-size: 9px; letter-spacing: .07em; text-transform: uppercase; color: #6F7780;
+    text-align: left; padding: 5px 6px; border-bottom: 1.5px solid #0B0D0E; font-weight: 700;
+  }
+  td { border-bottom: 1px solid #D3D8DE; height: 23px; padding: 2px 6px; }
+  td.ex { width: 30%; }
+  td.set { width: 7%; text-align: center; color: #9AA1A9; font-size: 11px; }
+  tr.gap td { border-bottom: 2px solid #0B0D0E; height: 9px; }
+  .legend { font-size: 10.5px; color: #3F464D; border-top: 1px solid #D3D8DE; padding-top: 9px; display: flex; gap: 20px; flex-wrap: wrap; }
+  .legend b { color: #0B0D0E; }
+  .print { text-align: center; margin: 0 auto 18px; max-width: 210mm; }
+  button {
+    font: inherit; font-weight: 600; background: #0B0D0E; color: #fff; border: 0;
+    padding: 9px 20px; border-radius: 6px; cursor: pointer;
+  }
+  .hint { font-size: 12px; color: #6F7780; margin-top: 7px; }
+  @media print {
+    body { background: #fff; padding: 0; font-size: 11px; }
+    .sheet { box-shadow: none; max-width: none; padding: 0; }
+    .print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="print">
+  <button onclick="window.print()">Print this page</button>
+  <p class="hint">Two sessions per sheet. Print double sided for a week at a time.</p>
+</div>
+
+<div class="sheet">
+  <div class="top">
+    <div>
+      <h1>Training log</h1>
+      <div class="sub">Groundwork &middot; beat last week</div>
+    </div>
+    <div style="font-size:11px;text-align:right;color:#6F7780">
+      Week _____ of _____<br>Block _____
+    </div>
+  </div>
+
+  <div class="meta">
+    <div>Date <span class="rule"></span></div>
+    <div>Session <span class="rule"></span></div>
+    <div>Bodyweight <span class="rule"></span></div>
+    <div>Sleep (h) <span class="rule" style="min-width:40px"></span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Exercise</th><th style="width:7%">Set</th>
+        <th style="width:14%">Weight</th><th style="width:11%">Reps</th>
+        <th style="width:8%">RIR</th><th>Last time / notes</th>
+      </tr>
+    </thead>
+    <tbody id="a"></tbody>
+  </table>
+
+  <div class="top" style="margin-top:22px">
+    <div>
+      <h1>Session 2</h1>
+      <div class="sub">Same week</div>
+    </div>
+  </div>
+
+  <div class="meta">
+    <div>Date <span class="rule"></span></div>
+    <div>Session <span class="rule"></span></div>
+    <div>Bodyweight <span class="rule"></span></div>
+    <div>Sleep (h) <span class="rule" style="min-width:40px"></span></div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Exercise</th><th style="width:7%">Set</th>
+        <th style="width:14%">Weight</th><th style="width:11%">Reps</th>
+        <th style="width:8%">RIR</th><th>Last time / notes</th>
+      </tr>
+    </thead>
+    <tbody id="b"></tbody>
+  </table>
+
+  <div class="legend">
+    <span><b>RIR</b> reps in reserve. Aim for 1 to 3 on working sets.</span>
+    <span><b>Progress</b> when every set hits the top of your rep range, add the smallest weight.</span>
+    <span><b>Warm-ups</b> do not count as sets.</span>
+  </div>
+</div>
+
+<script>
+  // 6 exercises x 3 sets per session, with a divider between exercises
+  function fill(id) {
+    var html = '';
+    for (var e = 0; e < 6; e++) {
+      for (var s = 1; s <= 3; s++) {
+        html += '<tr>' +
+          '<td class="ex">' + (s === 1 ? '' : '') + '</td>' +
+          '<td class="set">' + s + '</td><td></td><td></td><td></td><td></td></tr>';
+      }
+      if (e < 5) html += '<tr class="gap"><td colspan="6"></td></tr>';
+    }
+    document.getElementById(id).innerHTML = html;
+  }
+  fill('a'); fill('b');
+</script>
+</body>
+</html>

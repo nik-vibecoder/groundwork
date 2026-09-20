@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Answer engines and AI crawlers are welcome to use this content.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://USERNAME.github.io/groundwork/sitemap.xml
