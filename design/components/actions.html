@@ -8,7 +8,7 @@
 <title>Actions · Groundwork design</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/css/style.css">
 <style>
   /* preview scaffolding only, not part of the site */
@@ -23,9 +23,24 @@
 <body class="pv">
 <a class="back" href="index.html">&larr; All components</a>
 <h1 style="margin-top:14px">Actions</h1>
-<p class="sub">Buttons, filter chips and tier tags.</p>
+<p class="sub">Buttons, filter chips, pills, markers and tier tags.</p>
 <h2>Buttons</h2>
 <div class="btns" style="margin-top:0">
+  <a class="btn" href="#">Get my numbers</a>
+  <a class="btn btn--sec" href="#">Secondary</a>
+</div>
+
+<h2>Pill and marker</h2>
+<div class="row">
+  <span class="pill">Short answer</span>
+  <span style="font-size:1.5rem;font-weight:640;letter-spacing:-.03em;color:var(--tx)">How the <span class="mark">tiers</span> work</span>
+</div>
+<div class="sheet" style="padding:18px 20px;margin-top:10px">
+  <span style="font-size:1.5rem;font-weight:640;letter-spacing:-.03em">Inside a sheet: <span class="mark">a true marker</span></span>
+</div>
+
+<h2>Buttons inside a sheet</h2>
+<div class="sheet btns" style="padding:18px 20px;margin-top:0">
   <a class="btn" href="#">Get my numbers</a>
   <a class="btn btn--sec" href="#">Secondary</a>
 </div>
@@ -46,7 +61,10 @@
 </div>
 
 <h2>Links</h2>
-<p>Inline links are blue: <a href="#">read the training tiers</a>. Citations look like this:<a class="ref" href="#">8</a></p>
+<p>On graphite, inline links are lime: <a href="#">read the training tiers</a>. Citations look like this:<a class="ref" href="#">8</a></p>
+<div class="sheet" style="padding:18px 20px;margin-top:10px">
+  <p style="margin:0">Inside a white sheet they are ink with an underline, and a lime marker on hover: <a href="#">read the training tiers</a>. Citation:<a class="ref" href="#">8</a></p>
+</div>
 <script src="../../assets/js/site.js"></script>
 </body>
 </html>

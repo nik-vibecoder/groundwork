@@ -67,6 +67,7 @@ Open `components/index.html` in a browser (or under the dev server at `/design/c
 | Page | Covers |
 | --- | --- |
 | `tokens.html` | Colours, type, radii, shadows |
-| `actions.html` | Buttons, chips, tags |
+| `actions.html` | Buttons, chips, pills, markers, tags |
 | `cards-notes.html` | Cards, notes (green / amber / red), stats |
 | `accordion.html` | Accordion, tier rows with panels |
+| `hero.html` | Split hero, white sheet, tier cards with weight bars |
