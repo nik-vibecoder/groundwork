@@ -104,6 +104,13 @@ always comes with a label ("Tier 1 · foundation"), so colour is never the only 
 | `.card--tier` | Tier card: mono label, big coloured number, weight bar |
 | `.card__bar > i` | The bar itself; its `width` is the tier's share of the result |
 
+## Two states in the sidebar
+
+`[aria-current="page"]` (the page you are on) is the lime pill. `.is-active` (the section you
+have scrolled to, set by `site.js`) is `--bg-hover` with a 2px inset lime rail. They are different
+questions, so they get different weights of signal; giving both the lime pill put two shouting
+blocks in the sidebar at once.
+
 ## Metrics
 
 | Token | Value |

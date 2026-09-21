@@ -216,9 +216,15 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
   font-size: .845rem; color: var(--tx-3); text-decoration: none; font-weight: 500;
 }
 .navgroup__list a:hover { background: var(--bg-hover); color: var(--tx); text-decoration: none; }
-.navgroup__list a[aria-current="page"],
+/* two different states, so two different weights of signal:
+   .is-active = the section you have scrolled to, quiet;
+   [aria-current] = the page you are actually on, lime. */
 .navgroup__list a.is-active {
-  color: var(--ink); background: var(--lime); font-weight: 700;
+  color: var(--tx); background: var(--bg-hover); font-weight: 650;
+  box-shadow: inset 2px 0 0 var(--lime);
+}
+.navgroup__list a[aria-current="page"] {
+  color: var(--ink); background: var(--lime); font-weight: 700; box-shadow: none;
 }
 
 .side__solo {
