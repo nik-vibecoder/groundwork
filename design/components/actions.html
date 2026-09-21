@@ -1,0 +1,52 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Actions · Groundwork design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>
+  /* preview scaffolding only, not part of the site */
+  body { padding: 32px var(--pad) 64px; max-width: 880px; margin: 0 auto; }
+  .pv h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .pv .sub { color: var(--tx-3); font-size: .9rem; margin: 0 0 32px; }
+  .pv h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--tx-3); margin: 36px 0 12px; }
+  .pv .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .pv .back { font-size: .85rem; }
+</style>
+</head>
+<body class="pv">
+<a class="back" href="index.html">&larr; All components</a>
+<h1 style="margin-top:14px">Actions</h1>
+<p class="sub">Buttons, filter chips and tier tags.</p>
+<h2>Buttons</h2>
+<div class="btns" style="margin-top:0">
+  <a class="btn" href="#">Get my numbers</a>
+  <a class="btn btn--sec" href="#">Secondary</a>
+</div>
+
+<h2>Filter chips (click to toggle)</h2>
+<div class="tags" role="group" aria-label="Demo filter">
+  <button class="chip" aria-pressed="true">All</button>
+  <button class="chip" aria-pressed="false">Squat</button>
+  <button class="chip" aria-pressed="false">Hinge</button>
+  <button class="chip" aria-pressed="false">Push</button>
+</div>
+
+<h2>Tags</h2>
+<div class="row">
+  <span class="tag tag--g">Tier 1</span>
+  <span class="tag tag--a">Tier 2</span>
+  <span class="tag tag--r">Tier 3</span>
+</div>
+
+<h2>Links</h2>
+<p>Inline links are blue: <a href="#">read the training tiers</a>. Citations look like this:<a class="ref" href="#">8</a></p>
+<script src="../../assets/js/site.js"></script>
+</body>
+</html>
