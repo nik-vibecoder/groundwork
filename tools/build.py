@@ -181,9 +181,10 @@ def build_nav():
 
 
 MARK = ('<svg class="side__mark" viewBox="0 0 24 24" fill="none" aria-hidden="true">'
-        '<path d="M12 3 22 20.5H2Z" fill="#0F8A54"/>'
-        '<path d="M12 3 17 11.7H7Z" fill="#D98014"/>'
-        '<path d="M12 3 14.2 6.9H9.8Z" fill="#D92D20"/></svg>')
+        '<rect width="24" height="24" rx="6.5" fill="#C6F135"/>'
+        '<rect x="7" y="6" width="10" height="3.3" rx="1.4" fill="#0B0B0F"/>'
+        '<rect x="5.5" y="10.35" width="13" height="3.3" rx="1.4" fill="#0B0B0F"/>'
+        '<rect x="4" y="14.7" width="16" height="3.3" rx="1.4" fill="#0B0B0F"/></svg>')
 
 
 def faq_schema(body):
@@ -258,12 +259,12 @@ SHELL = """<!DOCTYPE html>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#1C1D22">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3 22 20.5H2Z' fill='%230F8A54'/%3E%3Cpath d='M12 3 17 11.7H7Z' fill='%23D98014'/%3E%3Cpath d='M12 3 14.2 6.9H9.8Z' fill='%23D92D20'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6.5' fill='%23C6F135'/%3E%3Crect x='7' y='6' width='10' height='3.3' rx='1.4' fill='%230B0B0F'/%3E%3Crect x='5.5' y='10.35' width='13' height='3.3' rx='1.4' fill='%230B0B0F'/%3E%3Crect x='4' y='14.7' width='16' height='3.3' rx='1.4' fill='%230B0B0F'/%3E%3C/svg%3E">
 {schema}
 </head>
 <body>

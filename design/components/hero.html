@@ -1,0 +1,80 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hero, sheet, tier cards &middot; Groundwork design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>
+  /* preview scaffolding only, not part of the site */
+  body { padding: 32px var(--pad) 64px; max-width: 980px; margin: 0 auto; }
+  .pv h1.t { font-size: 1.5rem; margin: 14px 0 4px; }
+  .pv .sub { color: var(--tx-3); font-size: .9rem; margin: 0 0 32px; }
+  .pv h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--tx-3); margin: 36px 0 12px; }
+  .pv .back { font-size: .85rem; }
+</style>
+</head>
+<body class="pv">
+<a class="back" href="index.html">&larr; All components</a>
+<h1 class="t">Hero, sheet, tier cards</h1>
+<p class="sub">The split hero, the white sheet, and the tier card whose bar is sized to its share of the result.</p>
+
+<h2>Hero</h2>
+<section class="hero">
+  <div>
+    <span class="pill">Free, no sign-up, no products</span>
+    <h1>Fitness fundamentals, <em>ranked by what actually matters</em></h1>
+    <p class="lede">Most fitness advice is not wrong. It is unranked. A supplement stack and your weekly calorie intake get the same airtime.</p>
+    <div class="btns">
+      <a class="btn" href="#">Get my numbers</a>
+      <a class="btn btn--sec" href="#">Pick a training plan</a>
+    </div>
+  </div>
+  <div class="sheet idea">
+    <span class="idea__k">The whole idea</span>
+    <div class="idea__row"><span class="idea__n">5%</span> <span class="pill">drives it</span></div>
+    <p>Calories, protein, hard sets, sleep, steps.</p>
+    <hr>
+    <div class="idea__row"><span class="idea__n idea__n--sm">95%</span> <strong>does not</strong></div>
+    <p>Timing, tempo, supplements, splits.</p>
+  </div>
+</section>
+
+<h2>Short answer (white sheet)</h2>
+<div class="answer">
+  <span class="answer__k">Short answer</span>
+  <p>If you do only seven things, do these: eat a deliberate calorie target, get enough protein, lift, sleep and walk.</p>
+  <p>Everything else on this site is detail.</p>
+</div>
+
+<h2>Tier cards with weight bars</h2>
+<div class="cards cards--3">
+  <div class="card card--tier card--g">
+    <p class="card__k">Tier 1 &middot; foundation</p>
+    <div class="card__stat">80%</div>
+    <div class="card__bar" role="img" aria-label="80% of the result"><i style="width:80%"></i></div>
+    <h3>Green: foundation</h3>
+    <p>Four or five things, held for months.</p>
+  </div>
+  <div class="card card--tier card--a">
+    <p class="card__k">Tier 2 &middot; worth tuning</p>
+    <div class="card__stat">15&ndash;20%</div>
+    <div class="card__bar" role="img" aria-label="18% of the result"><i style="width:18%"></i></div>
+    <h3>Amber: worth tuning</h3>
+    <p>Real, but only once the foundation holds.</p>
+  </div>
+  <div class="card card--tier card--r">
+    <p class="card__k">Tier 3 &middot; ignore for now</p>
+    <div class="card__stat">1&ndash;5%</div>
+    <div class="card__bar" role="img" aria-label="4% of the result"><i style="width:4%"></i></div>
+    <h3>Red: ignore for now</h3>
+    <p>Where the noise lives.</p>
+  </div>
+</div>
+</body>
+</html>

@@ -8,7 +8,7 @@
 <title>Tokens · Groundwork design</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/css/style.css">
 <style>
   /* preview scaffolding only, not part of the site */
@@ -32,7 +32,16 @@
   <div style="width:120px"><div style="height:56px;border:1px solid var(--line-2);background:var(--bg-hover);border-radius:var(--r-sm)"></div><small>--bg-hover</small></div>
 </div>
 
-<h2>Traffic light</h2>
+<h2>Page, surfaces and brand</h2>
+<div class="row">
+  <div style="width:120px"><div style="height:56px;background:var(--bg);border:1px solid var(--line-2);border-radius:var(--r-sm)"></div><small>--bg</small></div>
+  <div style="width:120px"><div style="height:56px;background:var(--surface);border-radius:var(--r-sm)"></div><small>--surface</small></div>
+  <div style="width:120px"><div style="height:56px;background:var(--side-bg);border-radius:var(--r-sm)"></div><small>--side-bg</small></div>
+  <div style="width:120px"><div style="height:56px;background:var(--ink);border-radius:var(--r-sm)"></div><small>--ink</small></div>
+  <div style="width:120px"><div style="height:56px;background:var(--lime);border-radius:var(--r-sm)"></div><small>--lime</small></div>
+</div>
+
+<h2>Traffic light, dark context</h2>
 <div class="row" style="align-items:stretch">
   <div style="flex:1;min-width:200px">
     <div style="display:grid;grid-template-columns:repeat(4,1fr);height:56px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
@@ -48,6 +57,22 @@
     <small>red: solid, ink, bg, line</small></div>
 </div>
 
+<h2>Traffic light, inside a white sheet</h2>
+<div class="sheet row" style="padding:16px;align-items:stretch">
+  <div style="flex:1;min-width:180px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);height:48px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
+      <span style="background:var(--green)"></span><span style="background:var(--green-ink)"></span><span style="background:var(--green-bg)"></span><span style="background:var(--green-line)"></span></div>
+    <small>green</small></div>
+  <div style="flex:1;min-width:180px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);height:48px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
+      <span style="background:var(--amber)"></span><span style="background:var(--amber-ink)"></span><span style="background:var(--amber-bg)"></span><span style="background:var(--amber-line)"></span></div>
+    <small>amber</small></div>
+  <div style="flex:1;min-width:180px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);height:48px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
+      <span style="background:var(--red)"></span><span style="background:var(--red-ink)"></span><span style="background:var(--red-bg)"></span><span style="background:var(--red-line)"></span></div>
+    <small>red</small></div>
+</div>
+
 <h2>Text</h2>
 <p style="color:var(--tx);margin:0">--tx  The quick brown fox jumps over the lazy dog.</p>
 <p style="color:var(--tx-2);margin:0">--tx-2  The quick brown fox jumps over the lazy dog.</p>
@@ -58,7 +83,7 @@
 <h1 style="margin:0 0 .3em">Heading one</h1>
 <h2 style="all:unset;display:block;font-size:1.5rem;font-weight:650;margin:0 0 .3em">Heading two</h2>
 <h3>Heading three</h3>
-<p>Body copy in Inter at 16px with generous line height, so long paragraphs stay readable for someone learning the fundamentals after a working day.</p>
+<p>Body copy in Figtree at 16px with generous line height, so long paragraphs stay readable for someone learning the fundamentals after a working day.</p>
 <p style="font-family:var(--mono);font-weight:600">2,450 kcal · 165 g protein · 4 × 6–10 @ RPE 8 (IBM Plex Mono)</p>
 
 <h2>Radii and shadows</h2>
