@@ -24,12 +24,12 @@ SRC = ROOT / "src"
 # Change this to your own URL before publishing, then re-run the build.
 # It drives canonical links, Open Graph tags, the sitemap and structured data.
 # ---------------------------------------------------------------------------
-BASE = "https://USERNAME.github.io/groundwork"
+BASE = "https://nik-vibecoder.github.io/groundwork"
 
 SITE = "Groundwork"
 TAGLINE = "Fitness fundamentals, ranked by what actually matters"
 AUTHOR = "Groundwork"
-UPDATED = "2026-09-20"
+UPDATED = "2026-09-21"
 
 I = {  # nav icons, 1.6 stroke, currentColor
     "start": '<path d="M3 10.2 12 3l9 7.2"/><path d="M5 9.4V20h14V9.4"/><path d="M9.5 20v-6h5v6"/>',
