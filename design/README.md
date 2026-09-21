@@ -30,6 +30,25 @@ design/
 
 7. **Merge** to `main` before starting other site work.
 
+## Working with Claude Design
+
+**One-time setup.** Create a design-system project in claude.ai/design. From an interactive Claude Code
+session, run `/design-sync` and point it at `design/components/`. You approve the exact files it
+writes.
+
+**Each design cycle**
+
+1. Design in Claude Design, with the design system loaded.
+2. Save the chosen version into `exports/` (HTML export, screenshot, or a short note).
+3. `git checkout -b design/<short-name>`
+4. Ask Claude Code to implement the export in `assets/css/style.css` and `src/`, and to update
+   `tokens.md` and the component previews.
+5. `python3 tools/build.py`, check `components/` and the real pages, commit, open a PR.
+6. After merge, run `/design-sync` again so Claude Design matches the repo.
+
+The repo is the source of truth. Update Claude Design from it, never the other way round. If a round
+changes tokens, land that as its own small PR before the component changes.
+
 ## Rules
 
 - **`style.css` is the single source of truth.** The previews link to it directly. They never copy
