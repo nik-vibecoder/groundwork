@@ -1,0 +1,72 @@
+<!-- @dsCard group="Foundations" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tokens · Groundwork design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>
+  /* preview scaffolding only, not part of the site */
+  body { padding: 32px var(--pad) 64px; max-width: 880px; margin: 0 auto; }
+  .pv h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .pv .sub { color: var(--tx-3); font-size: .9rem; margin: 0 0 32px; }
+  .pv h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--tx-3); margin: 36px 0 12px; }
+  .pv .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .pv .back { font-size: .85rem; }
+</style>
+</head>
+<body class="pv">
+<a class="back" href="index.html">&larr; All components</a>
+<h1 style="margin-top:14px">Tokens</h1>
+<p class="sub">Values live in :root of assets/css/style.css. Notes in design/tokens.md.</p>
+<h2>Surfaces</h2>
+<div class="row">
+  <div style="width:120px"><div style="height:56px;border:1px solid var(--line-2);background:var(--bg);border-radius:var(--r-sm)"></div><small>--bg</small></div>
+  <div style="width:120px"><div style="height:56px;border:1px solid var(--line-2);background:var(--bg-subtle);border-radius:var(--r-sm)"></div><small>--bg-subtle</small></div>
+  <div style="width:120px"><div style="height:56px;border:1px solid var(--line-2);background:var(--bg-sunken);border-radius:var(--r-sm)"></div><small>--bg-sunken</small></div>
+  <div style="width:120px"><div style="height:56px;border:1px solid var(--line-2);background:var(--bg-hover);border-radius:var(--r-sm)"></div><small>--bg-hover</small></div>
+</div>
+
+<h2>Traffic light</h2>
+<div class="row" style="align-items:stretch">
+  <div style="flex:1;min-width:200px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);height:56px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
+      <span style="background:var(--green)"></span><span style="background:var(--green-ink)"></span><span style="background:var(--green-bg)"></span><span style="background:var(--green-line)"></span></div>
+    <small>green: solid, ink, bg, line</small></div>
+  <div style="flex:1;min-width:200px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);height:56px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
+      <span style="background:var(--amber)"></span><span style="background:var(--amber-ink)"></span><span style="background:var(--amber-bg)"></span><span style="background:var(--amber-line)"></span></div>
+    <small>amber: solid, ink, bg, line</small></div>
+  <div style="flex:1;min-width:200px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);height:56px;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--line-2)">
+      <span style="background:var(--red)"></span><span style="background:var(--red-ink)"></span><span style="background:var(--red-bg)"></span><span style="background:var(--red-line)"></span></div>
+    <small>red: solid, ink, bg, line</small></div>
+</div>
+
+<h2>Text</h2>
+<p style="color:var(--tx);margin:0">--tx  The quick brown fox jumps over the lazy dog.</p>
+<p style="color:var(--tx-2);margin:0">--tx-2  The quick brown fox jumps over the lazy dog.</p>
+<p style="color:var(--tx-3);margin:0">--tx-3  The quick brown fox jumps over the lazy dog.</p>
+<p style="color:var(--tx-4);margin:0">--tx-4  The quick brown fox jumps over the lazy dog.</p>
+
+<h2>Type</h2>
+<h1 style="margin:0 0 .3em">Heading one</h1>
+<h2 style="all:unset;display:block;font-size:1.5rem;font-weight:650;margin:0 0 .3em">Heading two</h2>
+<h3>Heading three</h3>
+<p>Body copy in Inter at 16px with generous line height, so long paragraphs stay readable for someone learning the fundamentals after a working day.</p>
+<p style="font-family:var(--mono);font-weight:600">2,450 kcal · 165 g protein · 4 × 6–10 @ RPE 8 (IBM Plex Mono)</p>
+
+<h2>Radii and shadows</h2>
+<div class="row">
+  <div style="width:110px;height:64px;border:1px solid var(--line);border-radius:var(--r-sm);box-shadow:var(--shadow-sm);display:grid;place-items:center"><small>--r-sm</small></div>
+  <div style="width:110px;height:64px;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow-sm);display:grid;place-items:center"><small>--r</small></div>
+  <div style="width:110px;height:64px;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow);display:grid;place-items:center"><small>--r-lg + shadow</small></div>
+</div>
+<script src="../../assets/js/site.js"></script>
+</body>
+</html>

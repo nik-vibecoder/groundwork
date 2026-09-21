@@ -1,0 +1,60 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Cards, notes and stats · Groundwork design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>
+  /* preview scaffolding only, not part of the site */
+  body { padding: 32px var(--pad) 64px; max-width: 880px; margin: 0 auto; }
+  .pv h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .pv .sub { color: var(--tx-3); font-size: .9rem; margin: 0 0 32px; }
+  .pv h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--tx-3); margin: 36px 0 12px; }
+  .pv .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .pv .back { font-size: .85rem; }
+</style>
+</head>
+<body class="pv">
+<a class="back" href="index.html">&larr; All components</a>
+<h1 style="margin-top:14px">Cards, notes and stats</h1>
+<p class="sub">Content blocks used on the home page, calculators and tier pages.</p>
+<h2>Cards</h2>
+<div class="cards cards--3">
+  <div class="card">
+    <div class="card__ico card__ico--g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.2 12 3l9 7.2"/><path d="M5 9.4V20h14V9.4"/></svg></div>
+    <h3>Green: foundation</h3>
+    <p>Get these roughly right and hold them for months.</p>
+    <p><strong>Worth about 80% of the result.</strong></p>
+  </div>
+  <div class="card">
+    <div class="card__ico card__ico--a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/></svg></div>
+    <h3>Amber: worth tuning</h3>
+    <p>Matters once the foundation is automatic.</p>
+  </div>
+  <div class="card">
+    <div class="card__ico card__ico--r"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></div>
+    <h3>Red: ignore for now</h3>
+    <p>Noise until everything above is in place.</p>
+  </div>
+</div>
+
+<h2>Notes</h2>
+<div class="note note--g"><div class="note__t">Do this</div><p>Green note. Confirmations and the recommended path.</p></div>
+<div class="note note--a" style="margin-top:12px"><div class="note__t">Worth knowing</div><p>Amber note. Caveats and second-order tuning.</p></div>
+<div class="note note--r" style="margin-top:12px"><div class="note__t">Deliberately not on the list</div><p>Red note. Things to skip for now.</p></div>
+
+<h2>Stats</h2>
+<div class="stats">
+  <div class="stat stat--hero"><div class="stat__k">Eat this</div><div class="stat__v">2,450</div><div class="stat__u">kcal per day</div></div>
+  <div class="stat"><div class="stat__k">Maintenance</div><div class="stat__v">2,850</div><div class="stat__u">kcal per day (TDEE)</div></div>
+  <div class="stat"><div class="stat__k">Protein</div><div class="stat__v">165</div><div class="stat__u">g per day</div></div>
+</div>
+<script src="../../assets/js/site.js"></script>
+</body>
+</html>

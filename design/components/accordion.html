@@ -1,0 +1,73 @@
+<!-- @dsCard group="Components" -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Accordion and tier rows · Groundwork design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<style>
+  /* preview scaffolding only, not part of the site */
+  body { padding: 32px var(--pad) 64px; max-width: 880px; margin: 0 auto; }
+  .pv h1 { font-size: 1.5rem; margin: 0 0 4px; }
+  .pv .sub { color: var(--tx-3); font-size: .9rem; margin: 0 0 32px; }
+  .pv h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--tx-3); margin: 36px 0 12px; }
+  .pv .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .pv .back { font-size: .85rem; }
+</style>
+</head>
+<body class="pv">
+<a class="back" href="index.html">&larr; All components</a>
+<h1 style="margin-top:14px">Accordion and tier rows</h1>
+<p class="sub">Native details for FAQs and references; button plus panel for the tier pyramid (toggled by assets/js/site.js).</p>
+<h2>Accordion</h2>
+<details class="acc">
+  <summary>Creatine monohydrate <span class="acc__meta">Strong evidence</span>
+    <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+  </summary>
+  <div class="acc__in"><p>Three to five grams daily, any time, with or without food. Cheap, well studied and well tolerated.</p></div>
+</details>
+<details class="acc">
+  <summary>Second item <span class="acc__meta">Moderate evidence</span>
+    <svg class="acc__plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+  </summary>
+  <div class="acc__in"><p>Panel content sits here.</p></div>
+</details>
+
+<h2>Tier rows (click to expand)</h2>
+<ul class="pyr">
+  <li>
+    <button class="tier tier--1" data-tier aria-expanded="false" aria-controls="pv1">
+      <span class="tier__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.2 12 3l9 7.2"/><path d="M5 9.4V20h14V9.4"/></svg></span>
+      <span class="tier__txt"><span class="tier__name">Calories, protein, consistency</span><span class="tier__sub">Tier 1 of 3 &middot; the foundation</span></span>
+      <span class="tier__pct">~80%</span>
+      <svg class="tier__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tierpanel" id="pv1" hidden><p>Panel content for tier one.</p></div>
+  </li>
+  <li>
+    <button class="tier tier--2" data-tier aria-expanded="false" aria-controls="pv2">
+      <span class="tier__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/></svg></span>
+      <span class="tier__txt"><span class="tier__name">Food quality, meal structure</span><span class="tier__sub">Tier 2 of 3 &middot; worth tuning</span></span>
+      <span class="tier__pct">~15%</span>
+      <svg class="tier__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tierpanel" id="pv2" hidden><p>Panel content for tier two.</p></div>
+  </li>
+  <li>
+    <button class="tier tier--3" data-tier aria-expanded="false" aria-controls="pv3">
+      <span class="tier__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg></span>
+      <span class="tier__txt"><span class="tier__name">Timing, hacks, exotic supplements</span><span class="tier__sub">Tier 3 of 3 &middot; ignore for now</span></span>
+      <span class="tier__pct">~5%</span>
+      <svg class="tier__caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div class="tierpanel" id="pv3" hidden><p>Panel content for tier three.</p></div>
+  </li>
+</ul>
+<script src="../../assets/js/site.js"></script>
+</body>
+</html>
